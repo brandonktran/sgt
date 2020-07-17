@@ -6,9 +6,18 @@ thead {
 span {
   float: right;
   padding-right: 20px;
-  font-size: 30px;;
+  font-size: 30px;
 }
 
 p {
   margin-left: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.container2 {
+  display:flex;
 }

@@ -13,7 +13,7 @@ function Grade(props) {
 export default class GradeTable extends React.Component {
   render() {
     return (
-      <table className='table table-striped'>
+      <table style={{ width: '75%' }} className='table table-striped m-3 mr-4'>
         <thead>
           <tr>
             <th scope="col">Name</th>
