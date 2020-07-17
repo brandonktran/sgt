@@ -5,9 +5,9 @@ import Header from './header';
 class App extends React.Component {
   constructor(props) {
     super(props);
+    this.average = 0;
     this.state = {
-      grades: [],
-      avg: 0
+      grades: []
     };
     this.getAverageGrade = this.getAverageGrade.bind(this);
   }
@@ -20,7 +20,7 @@ class App extends React.Component {
     fetch('/api/grades')
       .then(res => res.json())
       .then(data => this.setState({ grades: data }))
-      .then(() => this.getAverageGrade());
+      .then(() => { this.average = this.getAverageGrade(); });
   }
 
   getAverageGrade() {
@@ -29,14 +29,16 @@ class App extends React.Component {
       average += this.state.grades[i].grade;
     }
     average = Math.round(average / this.state.grades.length);
-    this.setState({ avg: average });
+    return average;
   }
 
   render() {
     return (
       <>
-        <Header avg={this.state.avg} />
-        <GradeTable grades={this.state.grades} />
+        <div className="container">
+          <Header avg={this.getAverageGrade()} />
+          <GradeTable grades={this.state.grades} />
+        </div>
       </>
     );
   }

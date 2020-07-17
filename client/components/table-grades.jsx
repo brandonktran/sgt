@@ -13,7 +13,7 @@ function Grade(props) {
 export default class GradeTable extends React.Component {
   render() {
     return (
-      <table className='table'>
+      <table className='table myTable'>
         <thead>
           <tr>
             <th scope="col">Name</th>
