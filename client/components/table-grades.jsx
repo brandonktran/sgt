@@ -25,7 +25,7 @@ export default class GradeTable extends React.Component {
         </thead>
         <tbody>
           {
-            this.props.grades.map((todo, index) => {
+            this.props.grades.map(todo => {
               return (
                 <Grade key={todo.id} id={todo.id} grade={todo} removeGrade={this.props.removeGrade} />
               );
