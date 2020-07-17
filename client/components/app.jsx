@@ -1,11 +1,6 @@
 import React from 'react';
 import GradeTable from './table-grades';
-
-function Header() {
-  return (
-    <h1>Student Grade Table</h1>
-  );
-}
+import Header from './header';
 
 class App extends React.Component {
   constructor(props) {
