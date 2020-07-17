@@ -12,3 +12,8 @@ span {
 p {
   margin-left: 20px;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
