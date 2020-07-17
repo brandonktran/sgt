@@ -14,7 +14,7 @@ export default class GradeForm extends React.Component {
   }
 
   handleChange(event) {
-    const property = event.target.placeholder.toLowerCase();
+    const property = event.target.name;
     this.setState({
       [property]: event.target.value
     });
@@ -64,7 +64,7 @@ export default class GradeForm extends React.Component {
             required
             autoFocus
             type="text"
-            name="Name"
+            name="name"
             placeholder="Name"
             value={this.state.name}
             onChange={this.handleChange}
@@ -89,7 +89,7 @@ export default class GradeForm extends React.Component {
           <input
             required
             type="text"
-            name="Course"
+            name="course"
             placeholder="Course"
             value={this.state.course}
             onChange={this.handleChange}
@@ -112,14 +112,14 @@ export default class GradeForm extends React.Component {
           <input
             required
             type="number"
-            name="Grade"
+            name="grade"
             placeholder="Grade"
             value={this.state.grade}
             onChange={this.handleChange}
           />
         </div>
         <div>
-          <button type="submit" className="btn btn-primary m-1">Add</button>
+          <button type="submit" className="btn btn-success m-1">Add</button>
           <button type="reset" className="btn btn-danger m-1">Cancel</button>
         </div>
       </form>

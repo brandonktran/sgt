@@ -19,16 +19,10 @@
       "grade": 100
     },
     {
-      "name": "ggg",
-      "course": "ddd",
-      "grade": "90",
+      "name": "ccc",
+      "course": "xxxxx",
+      "grade": "20",
       "id": 33
-    },
-    {
-      "name": "ggg",
-      "course": "ddd",
-      "grade": "45",
-      "id": 34
     }
   ]
 }
