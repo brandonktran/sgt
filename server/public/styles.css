@@ -1,0 +1,14 @@
+thead {
+  background-color: rgb(179, 176, 176);
+}
+
+
+span {
+  float: right;
+  padding-right: 20px;
+  font-size: 30px;;
+}
+
+p {
+  margin-left: 20px;
+}
