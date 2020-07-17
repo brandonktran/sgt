@@ -19,10 +19,16 @@
       "grade": 100
     },
     {
-      "name": "Brandon",
-      "course": "Node",
+      "name": "ggg",
+      "course": "ddd",
       "grade": "90",
       "id": 33
+    },
+    {
+      "name": "ggg",
+      "course": "ddd",
+      "grade": "45",
+      "id": 34
     }
   ]
 }
