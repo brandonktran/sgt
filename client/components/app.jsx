@@ -26,14 +26,14 @@ class App extends React.Component {
   getAverageGrade() {
     let average = 0;
     for (let i = 0; i < this.state.grades.length; i++) {
-      average += this.state.grades[i].grade;
+      average += parseFloat(this.state.grades[i].grade);
     }
     average = Math.round(average / this.state.grades.length);
     return average;
   }
 
   addGrade(newGrade) {
-    fetch('api/todos', {
+    fetch('api/grades', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -54,11 +54,13 @@ class App extends React.Component {
     return (
       <>
         <div className="container">
-          <div className="container">
+          <div>
             <Header avg={this.getAverageGrade()} />
-            <GradeTable grades={this.state.grades} />
           </div>
-          <GradeForm style={{ display: 'inline' }} onSubmit={this.addGrade} />
+          <div className="container2">
+            <GradeTable grades={this.state.grades} />
+            <GradeForm onSubmit={this.addGrade} />
+          </div>
         </div>
       </>
     );
