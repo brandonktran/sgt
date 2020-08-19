@@ -7,16 +7,16 @@
       "id": 1
     },
     {
+      "id": 2,
       "name": "Richard",
-      "course": "C+",
-      "grade": "85",
-      "id": 2
+      "course": "C++",
+      "grade": "85"
     },
     {
+      "id": 3,
       "name": "Dinesh",
       "course": "Node",
-      "grade": "100",
-      "id": 3
+      "grade": "100"
     }
   ]
 }

@@ -18,9 +18,6 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-.container2 {
-  display:flex;
-}
 
 
 .inputs {
@@ -28,6 +25,37 @@ input::-webkit-inner-spin-button {
   border-bottom: 1px solid #888888;
   border-radius: 2px;
   width: 100%;
-  background-color: rgba(250, 250, 250, 0.5);
   margin: -2px;
+}
+
+
+.average {
+  float: right;
+  top:10px;
+}
+
+.title {
+  font-size: 2rem;
+}
+@media (max-width: 544px) {
+  .card-title {font-size:1rem;}
+
+}
+
+/* /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .title {font-size:2.4rem;}
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .title {font-size:2.8rem;}
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .title {font-size:3rem;}
+
 }

@@ -96,10 +96,10 @@ class App extends React.Component {
     return (
       <>
         <div className="container">
-          <div>
+          <div className="row">
             <Header avg={this.getAverageGrade()} />
           </div>
-          <div className="container2">
+          <div className="row">
             <GradeTable grades={this.state.grades} removeGrade={this.deleteGrade} editGrade={this.editGrade} edit={this.state.edit} editToggle={this.editToggle} />
             <GradeForm onSubmit={this.addGrade} />
           </div>

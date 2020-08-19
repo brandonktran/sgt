@@ -45,7 +45,10 @@ export default class GradeForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit} onReset={this.handleReset} className="mt-4">
+      <form onSubmit={this.handleSubmit} onReset={this.handleReset} className="mt-4 m-2">
+        <div className="form-group">
+          <h2>Add a Grade</h2>
+        </div>
         <div className="form-group">
           <svg
             width="2em"
