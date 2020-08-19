@@ -1,11 +1,12 @@
-# sgt-react
+# sgt
 
-This is a dynamic web application for teachers who want to record the grades of their students. Built in React.js
+This is a dynamic web application for teachers who want to record the grades of their students.
 
 
 ## Live Site
 Try the live stie at: http://sgt.brandonktran.com/
 
+<img src="server/public/gifs/desktop.gif" style="display:inline-block;" width="98%">
 ## Technologies Used
 React.js </br>
 Node.js </br>
