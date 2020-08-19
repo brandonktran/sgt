@@ -23,3 +23,27 @@ CSS
 2. User can delete a grade </br>
 3. User can edit a grade </br>
 4. User can view grades </br>
+
+
+## Development
+### System Requirements
+Node.js 10 or higher <br>
+NPM 6 or higher <br>
+
+### Getting Started
+Clone the repository.
+```console
+git clone https://github.com/brandonktran/sgt.git
+cd sgt
+```
+
+Install all dependencies with NPM.
+```console
+npm install
+```
+
+Start the project.
+```console
+npm run dev
+```
+Then view the application by going to http://localhost:3000 in your browser.
