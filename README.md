@@ -4,7 +4,7 @@ This is a dynamic web application for teachers who want to record the grades of 
 
 
 ## Live Site
-http://sgt.brandonktran.com/
+Try the live stie at: http://sgt.brandonktran.com/
 
 ## Technologies Used
 React.js </br>
