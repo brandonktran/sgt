@@ -14,7 +14,6 @@ class Grade extends React.Component {
   }
 
   handleChange(event) {
-    console.log(event.target.name);
     const category = event.target.name;
     this.setState({
       [category]: event.target.value
