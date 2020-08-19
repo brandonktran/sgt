@@ -45,7 +45,10 @@ export default class GradeForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit} onReset={this.handleReset} className="mt-4">
+      <form onSubmit={this.handleSubmit} onReset={this.handleReset} className="mt-4 m-2">
+        <div className="form-group">
+          <h2>Add a Grade</h2>
+        </div>
         <div className="form-group">
           <svg
             width="2em"
@@ -119,8 +122,8 @@ export default class GradeForm extends React.Component {
           />
         </div>
         <div>
-          <button type="submit" className="btn btn-success m-1">Add</button>
-          <button type="reset" className="btn btn-danger m-1">Cancel</button>
+          <button type="submit" className="btn btn-outline-success m-1">Add</button>
+          <button type="reset" className="btn btn-outline-danger m-1">Cancel</button>
         </div>
       </form>
     );
