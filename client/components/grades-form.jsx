@@ -119,8 +119,8 @@ export default class GradeForm extends React.Component {
           />
         </div>
         <div>
-          <button type="submit" className="btn btn-success m-1">Add</button>
-          <button type="reset" className="btn btn-danger m-1">Cancel</button>
+          <button type="submit" className="btn btn-outline-success m-1">Add</button>
+          <button type="reset" className="btn btn-outline-danger m-1">Cancel</button>
         </div>
       </form>
     );

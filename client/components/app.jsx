@@ -7,11 +7,14 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      grades: []
+      grades: [],
+      edit: [false, null]
     };
     this.getAverageGrade = this.getAverageGrade.bind(this);
     this.addGrade = this.addGrade.bind(this);
     this.deleteGrade = this.deleteGrade.bind(this);
+    this.editGrade = this.editGrade.bind(this);
+    this.editToggle = this.editToggle.bind(this);
   }
 
   componentDidMount() {
@@ -72,6 +75,23 @@ class App extends React.Component {
       }));
   }
 
+  editGrade(id, newGrade) {
+    fetch(`api/grades/${id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(newGrade) //
+    }).then(res => res.json())
+      .then(data => this.getAllGrades());
+  }
+
+  editToggle(id) {
+    this.setState(prevState => {
+      return { edit: [!prevState.edit[0], id] };
+    });
+  }
+
   render() {
     return (
       <>
@@ -80,7 +100,7 @@ class App extends React.Component {
             <Header avg={this.getAverageGrade()} />
           </div>
           <div className="container2">
-            <GradeTable grades={this.state.grades} removeGrade={this.deleteGrade} />
+            <GradeTable grades={this.state.grades} removeGrade={this.deleteGrade} editGrade={this.editGrade} edit={this.state.edit} editToggle={this.editToggle} />
             <GradeForm onSubmit={this.addGrade} />
           </div>
         </div>

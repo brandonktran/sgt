@@ -21,3 +21,13 @@ input::-webkit-inner-spin-button {
 .container2 {
   display:flex;
 }
+
+
+.inputs {
+  border: none;
+  border-bottom: 1px solid #888888;
+  border-radius: 2px;
+  width: 100%;
+  background-color: rgba(250, 250, 250, 0.5);
+  margin: -2px;
+}
