@@ -26,6 +26,9 @@ class App extends React.Component {
 
   getAverageGrade() {
     let average = 0;
+    if (this.state.grades.length === 0) {
+      return 0;
+    }
     for (let i = 0; i < this.state.grades.length; i++) {
       average += parseFloat(this.state.grades[i].grade);
     }
