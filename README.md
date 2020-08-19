@@ -11,7 +11,10 @@ React.js </br>
 Node.js </br>
 json-server </br>
 Babel </br>
-Webpack
+Webpack </br>
+Bootstrap </br>
+HTML </br>
+CSS
 
 ## Main Features
 User can add a grade </br>
